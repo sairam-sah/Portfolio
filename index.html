@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cbc5942ea4.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">Skill</a></li>
+            <li><a href="#contact">Contact </a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="main">
+                <h1 class="headings">Hello,I am<br> SAIRAM SAH</h1>
+            <button class="btn">
+              Hire me
+            </button>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="headings">ABOUT ME </h1>
+        <div id="pic">
+           
+            <img src="img.jpg" alt="">
+            
+            <div id="intro">
+                <h2>Sairam Sah</h2>
+                <p> A passionate computer engineer with a strong background in software development and design. I have always been fascinated by the way computers work and how they can be used to solve complex problems. During my studies at Lalitpur Engineering College, I developed a strong foundation in computer engineering and gained experience in various programming languages such as Java, C++, and Python. I have also worked on several projects, including a software tool for data analysis. I am always eager to learn new technologies and tools and keep up-to-date with the latest developments in the field.</p>
+                <p></p>
+                <p> Overall, I am passionate about using my skills and knowledge in computer engineering to solve real-world problems and make a positive impact on people's lives. I look forward to the opportunity to bring my expertise to your team.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Designing web/App interfaces</span></li>
+                        <li><span>Web app Development</span></li>
+                        <li><span>Building Android/ios app</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BCT from Lalitpur Engineering College</span></li>
+                        <li><span>Intermediate +2 from DAV Sushil Kedia Vishwa Bharati H S school</span></li>
+                        <li><span>SLC from Shree Ratnarajya Higher Secondary School</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <h1 class="headings">PORTFOLIO</h1>
+    <section id="portfolio"> 
+        <div class="gallery">
+            <img src="portfolio/major.jpg" alt="">
+            <img src="Portfolio/logo.jpg" alt="">
+            <!-- <img src="Portfolio/portfolio3.jpg" alt="">
+            <img src="Portfolio/portfolio4.jpg" alt="">
+             -->
+            
+        </div>
+
+    </section>
+    <h1 class="headings">Services</h1>
+    <section id="services">
+       
+        <div class="row">
+            <div class="box">
+                <h1 class="heading">Website Design</h1>
+                <p>Website design is the process of creating the visual layout and user interface of a website. It involves designing the overall look and feel of a website, as well as determining the best way to organize content and navigation for optimal user experience.
+                   A good website design should be visually appealing, easy to navigate, and accessible to users of all abilities. It should also be responsive, meaning it can adjust to different screen sizes and devices, and optimized for fast loading speeds.</div>p
+            <div class="box">
+                <h1 class="heading">UX/UI Design</h1>
+                <p>User experience (UX) design and user interface (UI) design are two related but distinct disciplines that are both essential to creating a successful digital product, such as a website or mobile app. UI design, on the other hand, is concerned with the visual and interactive aspects of a digital product. This includes designing the layout, typography, color scheme, and other visual elements that make up the product's user interface. UI designers are responsible for creating a cohesive and aesthetically pleasing design that supports the product's overall UX goals.</p>
+            </div>  
+      
+            <div class="box">
+                <h1 class="heading">Building App</h1>
+                <p>Building an Android app involves designing, developing, testing, and publishing a software application for Android devices. The process begins with defining the app's purpose and features, planning its structure and user flow, and designing an intuitive user interface. The app is then developed using programming languages such as Java or Kotlin and integrated with the Android SDK. Testing is crucial to ensure the app works correctly, and it is free of bugs and glitches before it is published on the Google Play Store. After publication, the app needs to be maintained and updated regularly to fix bugs, add new features, or optimize performance.</p>
+            </div>  
+        
+
+        </div>
+
+    </section>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>+977-9808928414</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>sairamsah2054@gmail.com</p>                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter your Name">
+            <input type="email" name="email" class="input" placeholder="Enter your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+
+    </section>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+    
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    
+        }
+    </script>
+    
+</body>   
+</html>
