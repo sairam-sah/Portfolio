@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/cbc5942ea4.js" crossorigin="anonymous"></script>
 </head> 
@@ -95,28 +95,33 @@
         </div>
 
     </section>
+    <h1 class="title">Contact Me</h1>
     <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact">
-                    <h1 class="sub-title">Contact Me</h1>
+                <div class="contact-left">
                     <p><i class="fa-sharp fa-solid fa-phone"></i>+977-9808928414</p>
-                    <p><i class="fa-solid fa-paper-plane"></i>sairamsah2054@gmail.com</p>                    
+                    <p><i class="fa-solid fa-paper-plane"></i>sairamsah2054@gmail.com</p>
+                    <p><i class="fa-brands fa-facebook"></i>https://www.facebook.com/sairam.sah/</p>        
+                    <p><i class="fa-brands fa-linkedin"></i>https://www.linkedin.com/in/sairam-sah-18b594269/</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>  
+                             
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" class="input" placeholder="Enter your Name">
+                        <input type="email" name="email" class="input" placeholder="Enter your Email">
+                        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter your Message" style="width: 488px;height: 64px;"></textarea>
+                        <button type="submit" class="btn btn2">Submitt</button>
+                    </form>
                 </div>
             </div>
+             <a href="myCV.pdf" download class="btn btn2">Download Cv</a>
         </div>
-        
     </div>
-    <section id="contact">
-        <h1 class="headings">CONTACT</h1>
-        <form action="" class="form">
-            <input type="text" name="name" class="input" placeholder="Enter your Name">
-            <input type="email" name="email" class="input" placeholder="Enter your Email">
-            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter your Message"></textarea>
-            <input type="submit" value="SEND" id="send">
-        </form>
-
-    </section>
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
